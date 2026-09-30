@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>International Mission Poster — NCU Taiwan</title>
+<style>
+  @page { size: A3 portrait; margin: 0; }
+  :root { --blue: #1e3a8a; --red: #c8102e; --ink: #1f2937; --muted: #6b7280; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @media print { body { padding: 0; background: #fff; } .poster { border: none; } }
+  * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #e5e7eb;
+    display: flex; justify-content: center; padding: 10mm;
+  }
+  .poster {
+    width: 297mm; height: 420mm; background: #ffffff;
+    display: flex; flex-direction: column;
+    border: 1mm solid var(--blue);
+    overflow: hidden;
+  }
+  /* ===== Header ===== */
+  header {
+    background: var(--blue); color: #fff; padding: 10mm 12mm 8mm;
+    border-bottom: 2mm solid var(--red);
+  }
+  header .kicker { font-size: 11pt; letter-spacing: 2px; text-transform: uppercase; color: #cbd5e1; font-family: Arial, sans-serif; }
+  header h1 { font-size: 26pt; line-height: 1.15; margin: 2mm 0 3mm; }
+  header .sub { font-size: 12pt; color: #e2e8f0; }
+  .badges { display: flex; gap: 6mm; margin-top: 4mm; flex-wrap: wrap; }
+  .badge { background: rgba(255,255,255,.12); border: 0.3mm solid rgba(255,255,255,.35); border-radius: 2mm; padding: 1.5mm 4mm; font-size: 10pt; font-family: Arial, sans-serif; }
+  /* ===== Layout ===== */
+  .content { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; padding: 8mm 12mm; }
+  .col { display: flex; flex-direction: column; gap: 6mm; }
+  section { border: 0.4mm solid #cbd5e1; border-radius: 2.5mm; padding: 5mm 6mm; background: #f8fafc; }
+  section h2 {
+    font-size: 14pt; color: var(--blue); border-bottom: 0.6mm solid var(--red);
+    padding-bottom: 1.5mm; margin-bottom: 3mm; font-family: Arial, sans-serif;
+  }
+  section p, section li { font-size: 10.5pt; line-height: 1.35; color: var(--ink); }
+  ul { padding-left: 5mm; }
+  li { margin-bottom: 1.5mm; }
+  .full { grid-column: 1 / -1; }
+  .caption { font-size: 8.5pt; color: var(--muted); font-style: italic; margin-top: 1mm; font-family: Arial, sans-serif; }
+  /* photo placeholders */
+  .ph { background: repeating-linear-gradient(45deg,#e2e8f0,#e2e8f0 6mm,#dbe3ee 6mm,#dbe3ee 12mm); border: 0.4mm dashed #94a3b8; border-radius: 2mm; display:flex; align-items:center; justify-content:center; text-align:center; color:#64748b; font-family: Arial, sans-serif; font-size: 9.5pt; padding: 2mm; overflow: hidden; }
+  .ph img { max-width: 100%; max-height: 100%; object-fit: cover; }
+  .ph.wide { height: 34mm; } .ph.tall { height: 44mm; } .ph.small { height: 26mm; }
+  /* comparison table */
+  table { width: 100%; border-collapse: collapse; font-size: 9.5pt; font-family: Arial, sans-serif; }
+  th { background: var(--blue); color: #fff; padding: 1.8mm; text-align: left; font-size: 10pt; }
+  td { border: 0.3mm solid #cbd5e1; padding: 1.8mm 2mm; background: #fff; vertical-align: top; line-height: 1.3; }
+  td:first-child { width: 26%; font-weight: bold; color: var(--blue); }
+  /* stat chips */
+  .chips { display: flex; gap: 3mm; flex-wrap: wrap; }
+  .chip { flex: 1 1 40%; background: #fff; border: 0.3mm solid #cbd5e1; border-left: 1.2mm solid var(--red); border-radius: 1.5mm; padding: 2.5mm; font-size: 9.5pt; font-family: Arial, sans-serif; }
+  .chip b { display: block; font-size: 11pt; color: var(--blue); margin-bottom: 0.5mm; }
+  /* situation cards */
+  .cards { display: flex; gap: 4mm; }
+  .card { flex: 1; background: #fff; border: 0.3mm solid #cbd5e1; border-top: 1.2mm solid var(--blue); border-radius: 1.5mm; padding: 3mm; font-size: 9.5pt; font-family: Arial, sans-serif; line-height: 1.3; }
+  .card b { color: var(--red); display: block; margin-bottom: 1mm; font-size: 10.5pt; }
+  /* adaptations list */
+  .adaptation li { list-style: none; margin-bottom: 2.5mm; }
+  .adaptation .tick { color: var(--red); font-weight: bold; margin-right: 1.5mm; }
+  footer { background: var(--blue); color: #fff; text-align: center; padding: 3.5mm; font-size: 10pt; font-family: Arial, sans-serif; border-top: 1.5mm solid var(--red); }
+  .flags { display: inline-flex; gap: 2mm; vertical-align: middle; margin-left: 3mm; }
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <header>
+    <div class="kicker">International Engineering Project — Poster</div>
+    <h1>From France to Taiwan:<br/>A 3-Month Research Internship at NCU</h1>
+    <div class="sub">Étienne Delaunay — Host: National Central University (NCU), Taoyuan, Taiwan</div>
+    <div class="badges">
+      <span class="badge">📍 Taoyuan, Taiwan</span>
+      <span class="badge">🏢 Medical Assistance Robotic System Lab (NCU)</span>
+      <span class="badge">📅 March – June 2026 (3 months)</span>
+      <span class="badge">🤖 Delta robot: wiring &amp; system integration</span>
+    </div>
+  </header>
+
+  <div class="content">
+    <!-- LEFT COLUMN -->
+    <div class="col">
+
+      <section>
+        <h2>1. Context</h2>
+        <p>As part of my engineering studies, I completed a 3-month international research internship at the <b>Medical Assistance Robotic System Laboratory</b>, National Central University (NCU), Taiwan. My mission: <b>wiring, cabling and integrating a delta robot</b> — a parallel-arm robot used for fast, precise handling tasks, with applications in medical assistance.</b></p>
+        <div class="ph wide">📷 [Photo: you in the lab / campus]</div>
+        <div class="caption">Fig. 1 — The host laboratory at NCU campus, Taoyuan.</div>
+      </section>
+
+      <section>
+        <h2>2. Taiwan at a Glance</h2>
+        <div class="chips">
+          <div class="chip"><b>Culture</b>Confucian values: respect for hierarchy &amp; seniority, group harmony, the concept of "face" (never embarrass someone publicly).</div>
+          <div class="chip"><b>Social &amp; Legal</b>Labour law: 40-hour week, ~10–15 days paid leave, National Health Insurance (NHI) — a different framework from the French 35-hour week and 5 weeks of leave.</div>
+          <div class="chip"><b>Work Practices</b>Indirect, polite communication; consensus before confrontation; relationship-building (guanxi) comes before business.</div>
+          <div class="chip"><b>Academia</b>Strong professor-student hierarchy; lab life includes shared meals and after-work group activities.</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. Taiwan 🇹🇼 vs France 🇫🇷</h2>
+        <table>
+          <tr><th>Aspect</th><th>Taiwan</th><th>France</th></tr>
+          <tr><td>Hierarchy</td><td>Strong, top-down; seniors rarely contradicted</td><td>Flatter; debate with supervisor is common</td></tr>
+          <tr><td>Communication</td><td>Indirect, saving face</td><td>Direct, sometimes confrontational</td></tr>
+          <tr><td>Working time</td><td>Long presence hours seen as commitment</td><td>35h week, strict right to disconnect</td></tr>
+          <tr><td>Relationships</td><td>Trust &amp; meals before work</td><td>Task first, relation follows</td></tr>
+        </table>
+        <div class="caption">Sources: field observation, discussions with local colleagues, Hofstede Insights &amp; Commisceo country guides.</div>
+      </section>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="col">
+
+      <section>
+        <h2>4. Situations I Experienced</h2>
+        <div class="cards">
+          <div class="card"><b>Autonomy from day one</b>"I worked on my own in the laboratory — no micro-management. Freedom to organize my own schedule and solve technical problems independently."</div>
+          <div class="card"><b>Lunch as a ritual</b>"Every day at noon, the whole team went to the restaurant together. Social time was not optional — it was the heartbeat of the lab."</div>
+          <div class="card"><b>Silence in meetings</b>"My early suggestions met with silence: disagreement was expressed indirectly. Feedback came later, one-to-one."</div>
+        </div>
+        <div class="ph small">📷 [Photo: team dinner / lab team / an anecdotal scene]</div>
+        <div class="caption">Fig. 2 — Building trust through shared meals: a key part of lab life at NCU.</div>
+      </section>
+
+      <section>
+        <h2>5. My Professional Posture — Adaptations</h2>
+        <ul class="adaptation">
+          <li><span class="tick">✔</span><b>Worked autonomously, reported smartly:</b> alone on my delta-robot bench, I organized my own schedule and prepared clear progress updates for my supervisor — proactive reporting replaced daily supervision.</li>
+          <li><span class="tick">✔</span><b>Joined the daily lunch ritual:</b> sharing the team's noon restaurant meals built trust and unlocked help, advice and equipment access far faster than working alone.</li>
+          <li><span class="tick">✔</span><b>Adjusted my communication:</b> I proposed ideas one-to-one with indirect phrasing rather than openly challenging habits in meetings — while keeping French rigour in wiring standards and safety checks.</li>
+          <li><span class="tick">✔</span><b>Managed international logistics:</b> visa, health insurance and travel admin handled in advance; technical documentation read in English to close the gap with local practices.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Key Takeaways</h2>
+        <ul>
+          <li><b>Intercultural competence</b> is a real engineering skill: adapting your communication is as important as your technical work.</li>
+          <li><b>Trust precedes tasks</b> in Taiwan — taking time for people accelerates projects.</li>
+          <li><b>Two cultures, one goal:</b> combining French critical thinking with Taiwanese harmony made the project succeed.</li>
+        </ul>
+        <div class="ph tall">🗺️ [Insert your map France→Taiwan or a photo of the delta robot / your wiring work]</div>
+        <div class="caption">Fig. 3 — The delta robot after integration: a 3-month international project.</div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    International Mission Validation — Engineering Programme
+    <span class="flags">
+      <svg width="22" height="15" viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect width="3" height="1" fill="#0039A6"/><rect width="3" height=".5" fill="#D52B1E"/></svg>
+      <svg width="22" height="15" viewBox="0 0 3 2"><rect width="3" height="2" fill="#c8102e"/></svg>
+    </span>
+  </footer>
+</div>
+</body>
+</html>
+</div>
+</body>
+</html>
