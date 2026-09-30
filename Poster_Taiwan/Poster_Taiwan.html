@@ -5,7 +5,7 @@
 <title>International Mission Poster — NCU Taiwan</title>
 <style>
   @page { size: A3 portrait; margin: 0; }
-  :root { --blue: #1e3a8a; --red: #c8102e; --ink: #1f2937; --muted: #6b7280; }
+  \:root { --blue: #1e3a8a; --red: #c8102e; --ink: #1f2937; --muted: #6b7280; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   @media print { body { padding: 0; background: #fff; } .poster { border: none; } }
   * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
@@ -44,23 +44,23 @@
   .full { grid-column: 1 / -1; }
   .caption { font-size: 8.5pt; color: var(--muted); font-style: italic; margin-top: 1mm; font-family: Arial, sans-serif; }
   /* photo placeholders */
-  .ph { background: repeating-linear-gradient(45deg,#e2e8f0,#e2e8f0 6mm,#dbe3ee 6mm,#dbe3ee 12mm); border: 0.4mm dashed #94a3b8; border-radius: 2mm; display:flex; align-items:center; justify-content:center; text-align:center; color:#64748b; font-family: Arial, sans-serif; font-size: 9.5pt; padding: 2mm; overflow: hidden; }
+  .ph { background: repeating-linear-gradient(45deg,#e2e8f0,#e2e8f0 6mm,#dbe3ee 6mm,#dbe3ee 12mm); border: 0.4mm dashed #94a3b8; border-radius: 2mm; display\:flex; align-items\:center; justify-content\:center; text-align\:center; color:#64748b; font-family: Arial, sans-serif; font-size: 9.5pt; padding: 2mm; overflow: hidden; }
   .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .ph.wide { height: 70mm; } .ph.tall { height: 44mm; } .ph.small { height: 26mm; }
   /* comparison table */
   table { width: 100%; border-collapse: collapse; font-size: 9.5pt; font-family: Arial, sans-serif; }
   th { background: var(--blue); color: #fff; padding: 1.8mm; text-align: left; font-size: 10pt; }
   td { border: 0.3mm solid #cbd5e1; padding: 1.8mm 2mm; background: #fff; vertical-align: top; line-height: 1.3; }
-  td:first-child { width: 26%; font-weight: bold; color: var(--blue); }
+  td\:first-child { width: 26%; font-weight: bold; color: var(--blue); }
   /* stat chips */
   .chips { display: flex; gap: 3mm; flex-wrap: wrap; }
   .chip { flex: 1 1 40%; background: #fff; border: 0.3mm solid #cbd5e1; border-left: 1.2mm solid var(--red); border-radius: 1.5mm; padding: 2.5mm; font-size: 9.5pt; font-family: Arial, sans-serif; }
-  .chip img { width: 100%; height: 38mm; object-fit: contain; display: block; margin-bottom: 2mm; }  .chip .keywords { font-size: 9pt; color: var(--ink); font-family: Arial, sans-serif; line-height: 1.3; }
+  .chip b { display: block; font-size: 11pt; color: var(--blue); margin-bottom: 0.5mm; }
   .chip img { width: 100%; height: 38mm; object-fit: contain; display: block; margin-bottom: 2mm; }
   .chip .keywords { font-size: 9pt; color: var(--ink); font-family: Arial, sans-serif; line-height: 1.3; }
   .chip.big img { height: 52mm; }
   .chip.big { flex-basis: 100%; }
-  .chip b { display: block; font-size: 11pt; color: var(--blue); margin-bottom: 0.5mm; }
+  .chip\:not(.big) { flex-basis: 46%; }
   /* situation cards */
   .cards { display: flex; gap: 4mm; }
   .card { flex: 1; background: #fff; border: 0.3mm solid #cbd5e1; border-top: 1.2mm solid var(--blue); border-radius: 1.5mm; padding: 3mm; font-size: 9.5pt; font-family: Arial, sans-serif; line-height: 1.3; }
@@ -77,7 +77,7 @@
 
   <header>
     <div class="kicker">International Engineering Project — Poster</div>
-    <h1>From France to Taiwan: 3 Month Research Internship at NCU</h1>
+    <h1>From France to Taiwan: 3-Month Research Internship at NCU</h1>
     <div class="sub">Étienne Delaunay — Host: National Central University (NCU), Taoyuan, Taiwan</div>
     <div class="badges">
       <span class="badge">🏢 Medical Assistance Robotic System Lab (NCU)</span>
@@ -110,15 +110,15 @@
             <b>Social &amp; Legal</b>
             <div class="keywords">40-hour week · NHI · Long hours culture</div>
           </div>
-          <div class="chip big">
-            <img src="travail.jpg" alt="Work practices in Taiwan"/>
-            <b>Work Practices</b>
-            <div class="keywords">Indirect talk · Consensus · Guanxi</div>
-          </div>
           <div class="chip">
             <img src="salle.png" alt="Empty university classroom"/>
             <b>Academia</b>
             <div class="keywords">Professor–student hierarchy · Shared lab life</div>
+          </div>
+          <div class="chip big">
+            <img src="travail.jpg" alt="Work practices in Taiwan"/>
+            <b>Work Practices</b>
+            <div class="keywords">Indirect talk · Consensus · Guanxi</div>
           </div>
         </div>
       </section>
@@ -157,31 +157,4 @@
           <li><span class="tick">✔</span><b>Worked autonomously, reported smartly:</b> alone on my delta-robot bench, I organized my own schedule and prepared clear progress updates for my supervisor — proactive reporting replaced daily supervision.</li>
           <li><span class="tick">✔</span><b>Joined the daily lunch ritual:</b> sharing the team's noon restaurant meals built trust and unlocked help, advice and equipment access far faster than working alone.</li>
           <li><span class="tick">✔</span><b>Adjusted my communication:</b> I proposed ideas one-to-one with indirect phrasing rather than openly challenging habits in meetings — while keeping French rigour in wiring standards and safety checks.</li>
-          <li><span class="tick">✔</span><b>Managed international logistics:</b> visa, health insurance and travel admin handled in advance; technical documentation read in English to close the gap with local practices.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>6. Key Takeaways</h2>
-        <ul>
-          <li><b>Intercultural competence</b> is a real engineering skill: adapting your communication is as important as your technical work.</li>
-          <li><b>Trust precedes tasks</b> in Taiwan — taking time for people accelerates projects.</li>
-          <li><b>Two cultures, one goal:</b> combining French critical thinking with Taiwanese harmony made the project succeed.</li>
-        </ul>
-        <div class="ph tall">🗺️ [Insert your map France→Taiwan or a photo of the delta robot / your wiring work]</div>
-        <div class="caption">Fig. 3 — The delta robot after integration: a 3-month international project.</div>
-      </section>
-
-    </div>
-  </div>
-
-  <footer>
-    International Mission Validation — Engineering Programme
-    <span class="flags">
-      <svg width="22" height="15" viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect width="3" height="1" fill="#0039A6"/><rect width="3" height=".5" fill="#D52B1E"/></svg>
-      <svg width="22" height="15" viewBox="0 0 3 2"><rect width="3" height="2" fill="#c8102e"/></svg>
-    </span>
-  </footer>
-</div>
-</body>
-</html>
+          <li><span class="tick">✔</span
