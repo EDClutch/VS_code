@@ -24,11 +24,12 @@
   header {
     background: var(--blue); color: #fff; padding: 4mm 12mm 3.5mm;
     border-bottom: 2mm solid var(--red);
-  } 
+  }
   header .kicker { font-size: 11pt; letter-spacing: 2px; text-transform: uppercase; color: #cbd5e1; font-family: Arial, sans-serif; }
   header h1 { font-size: 21pt; line-height: 1.15; margin: 1.5mm 0 2mm; }
   header .sub { font-size: 12pt; color: #e2e8f0; }
-  .badges { display: flex; gap: 6mm; margin-top: 2.5mm; flex-wrap: wrap; justify-content: center; }  .badge { background: rgba(255,255,255,.12); border: 0.3mm solid rgba(255,255,255,.35); border-radius: 2mm; padding: 1.5mm 4mm; font-size: 10pt; font-family: Arial, sans-serif; }
+  .badges { display: flex; gap: 6mm; margin-top: 2.5mm; flex-wrap: wrap; justify-content: center; }
+  .badge { background: rgba(255,255,255,.12); border: 0.3mm solid rgba(255,255,255,.35); border-radius: 2mm; padding: 1.5mm 4mm; font-size: 10pt; font-family: Arial, sans-serif; }
   /* ===== Layout ===== */
   .content { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; padding: 6mm 12mm; }
   .col { display: flex; flex-direction: column; gap: 6mm; }
@@ -81,7 +82,7 @@
     <div class="badges">
       <span class="badge">🏢 Medical Assistance Robotic System Lab (NCU)</span>
       <span class="badge">📅 June – August 2026 (3 months)</span>
-      <span class="badge">🤖 Delta robot: wiring &amp; system integration</span>
+      <span class="badge">🤖 SCARA robot: wiring &amp; system integration</span>
     </div>
   </header>
 
@@ -107,34 +108,19 @@
           <div class="chip">
             <img src="nightmarket.png" alt="Tired worker with bubble tea at a night market"/>
             <b>Social &amp; Legal</b>
-            <div class="keywords">Healthcare · Tiny housing  Protective state · exhausted people</div>
+            <div class="keywords">Efficient healthcare · Tiny housing · Protective state · Exhausted people</div>
           </div>
-
           <div class="chip">
             <img src="salle.png" alt="Empty university classroom"/>
             <b>Work Practices</b>
-            <div class="keywords">Individualistic: « sink or swim » · Little teamwork · cannon fodder</div>
+            <div class="keywords">Individualistic: « sink or swim » · Little teamwork · Replaceable employees</div>
           </div>
-
           <div class="chip big">
             <img src="travail.jpg" alt="Work practices in Taiwan"/>
             <b>Academia</b>
-            <div class="keywords">Thesis ·  work alone · Rare social life  Little knowledge-sharing</div>
+            <div class="keywords">Thesis everywhere · Work alone · Rare social life · Little knowledge-sharing</div>
           </div>
         </div>
-      </section>
-
-      <section>
-        <h2>3. Taiwan 🇹🇼 vs France 🇫🇷</h2>
-        <table>
-          <tr><th>Aspect</th><th>Taiwan (what I saw)</th><th>France</th></tr>
-          <tr><td>Employment</td><td>Full employment; easy to open a small shop or restaurant</td><td>Job market tighter; strong unemployment benefits</td></tr>
-          <tr><td>Healthcare</td><td>NHI: dermatologist in 10 min, no charge without symptoms</td><td>Efficient, but longer waits</td></tr>
-          <tr><td>Teamwork</td><td>Everyone alone on their project; little mutual help</td><td>Group projects, shared knowledge</td></tr>
-          <tr><td>Social life</td><td>Restaurants only — no bars, no parties, no campus nights</td><td>Bars, student parties, campus life</td></tr>
-          <tr><td>Leave</td><td>~1 week, rarely free to choose when</td><td>5 weeks, freely chosen</td></tr>
-        </table>
-        <div class="caption">Sources: field observation, discussions with local colleagues, Hofstede Insights &amp; Commisceo country guides.</div>
       </section>
 
     </div>
@@ -155,10 +141,10 @@
         <h2>5. My Professional Posture — Adaptations</h2>
         <ul class="adaptation">
           <li><span class="tick">✔</span><b>Self-organized from day one:</b> 8am–4pm at the lab, personal task board to track wiring steps and stay efficient without daily supervision.</li>
-          <li><span class="tick">✔</span><b>Left the project usable:</b> I wrote complete technical documentation so the next student can pick up the delta-robot integration where I stopped.</li>
+          <li><span class="tick">✔</span><b>Left the project usable:</b> I wrote complete technical documentation so the next student can pick up the SCARA-robot integration where I stopped.</li>
         </ul>
       </section>
-      
+
       <section>
         <h2>6. Key Takeaways</h2>
         <ul>
@@ -166,12 +152,25 @@
           <li><b>Trust precedes tasks</b> in Taiwan — taking time for people accelerates projects.</li>
           <li><b>Two cultures, one goal:</b> combining French critical thinking with Taiwanese harmony made the project succeed.</li>
         </ul>
-        <div class="ph tall">🗺️ [Insert your map France→Taiwan or a photo of the delta robot / your wiring work]</div>
-        <div class="caption">Fig. 3 — The delta robot after integration: a 3-month international project.</div>
+        <div class="ph tall">🗺️ [Insert your map France→Taiwan or a photo of the SCARA robot / your wiring work]</div>
+        <div class="caption">Fig. 3 — The SCARA robot after integration: a 3-month international project.</div>
       </section>
 
     </div>
   </div>
+
+  <section class="full">
+    <h2>3. Taiwan 🇹🇼 vs France 🇫🇷</h2>
+    <table>
+      <tr><th>Aspect</th><th>Taiwan (what I saw)</th><th>France</th></tr>
+      <tr><td>Employment</td><td>Full employment; easy to open a small shop or restaurant</td><td>Job market tighter; strong unemployment benefits</td></tr>
+      <tr><td>Healthcare</td><td>NHI: dermatologist in 10 min, no charge without symptoms</td><td>Efficient, but longer waits</td></tr>
+      <tr><td>Teamwork</td><td>Everyone alone on their project; little mutual help</td><td>Group projects, shared knowledge</td></tr>
+      <tr><td>Social life</td><td>Restaurants only — no bars, no parties, no campus nights</td><td>Bars, student parties, campus life</td></tr>
+      <tr><td>Leave</td><td>~1 week, rarely free to choose when</td><td>5 weeks, freely chosen</td></tr>
+    </table>
+    <div class="caption">Sources: field observation, discussions with local colleagues, Hofstede Insights &amp; Commisceo country guides.</div>
+  </section>
 
   <footer>
     International Mission Validation — Engineering Programme
